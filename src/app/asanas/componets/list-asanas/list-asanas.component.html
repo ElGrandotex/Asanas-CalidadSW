@@ -1,15 +1,24 @@
-<p>list-asanas works!</p>
-<h6 *ngFor="let value of asanasRutas">
-  {{value}}
-
-</h6>
 <div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-
-        <img *ngFor="let value of asanasRutas" src="{{value}}" alt="{{value}}" class="foto">
-      </div>
-    </div>
-  </div>
+  <table>
+    <tr>
+      <td *ngFor="let ruta of asanasRutas">
+        <img  src="{{ruta}}" alt="{{ruta}}" class="foto">
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let ingles of asanasIngles">
+        {{ ingles }}
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let espaniol of asanasEspaniol">
+        {{ espaniol }}
+      </td>
+    </tr>
+    <tr>
+      <td *ngFor="let sanscrito of asanasSanscrito">
+        {{ sanscrito }}
+      </td>
+    </tr>
+  </table>
 </div>

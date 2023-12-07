@@ -1,7 +1,14 @@
 .foto {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   padding: 1%;
-  border: 2px solid;
-  border-radius: 20%;
+}
+
+table, td, tr{
+  border: 3px solid;
+  border-color: gray;
+  text-align: center;
+  font-size: x-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: bold;
 }

@@ -14,9 +14,21 @@ export class ListAsanasComponent implements OnInit {
 
   ngOnInit(){
     this.asanasSrv.obtenerAsanasRuta();
+    this.asanasSrv.obtenerAsanasEnglish();
+    this.asanasSrv.obtenerAsanasSanskrit();
+    this.asanasSrv.obtenerAsanasSpanish();
   }
 
   get asanasRutas(){
-    return this.asanasSrv.asanas;
+    return this.asanasSrv.asanasRuta;
+  }
+  get asanasIngles(){
+    return this.asanasSrv.asanasEn;
+  }
+  get asanasEspaniol(){
+    return this.asanasSrv.asanasSp;
+  }
+  get asanasSanscrito(){
+    return this.asanasSrv.asanasSk;
   }
 }

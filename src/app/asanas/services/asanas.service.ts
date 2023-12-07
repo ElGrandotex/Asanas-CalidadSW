@@ -10,11 +10,11 @@ export class AsanasService {
 
   private apiUrl = 'assets/data/db.json';
   asanas!: any;
-  asanasID!: object;
-  asanasEn!: object;
-  asanasSp!: object;
-  asanasSk!: object;
-  asanasRuta!: object;
+  asanasID!: any;
+  asanasEn!: any;
+  asanasSp!: any;
+  asanasSk!: any;
+  asanasRuta!: any;
 
   constructor( private http: HttpClient) { }
 
@@ -29,11 +29,43 @@ export class AsanasService {
   obtenerAsanasRuta(){
     this.http.get<Asana[]>(`${ this.apiUrl }`)
     .pipe(
-      map(asanas => asanas.map(asa => asa.ruta))
+      map(rutas => rutas.map(ruta => ruta.ruta))
     )
     .subscribe( resp => {
-      this.asanas = resp
-      console.log(this.asanas);
+      this.asanasRuta = resp
+      console.log(this.asanasRuta);
+    })
+  }
+
+  obtenerAsanasEnglish(){
+    this.http.get<Asana[]>(`${ this.apiUrl }`)
+    .pipe(
+      map(asanas => asanas.map(asa => asa.en))
+    )
+    .subscribe( resp => {
+      this.asanasEn = resp
+      console.log(this.asanasEn);
+    })
+  }
+
+  obtenerAsanasSpanish(){
+    this.http.get<Asana[]>(`${ this.apiUrl }`)
+    .pipe(
+      map(spanish => spanish.map(sp => sp.sp))
+    )
+    .subscribe( resp => {
+      this.asanasSp = resp
+      console.log(this.asanasSp);
+    })
+  }
+  obtenerAsanasSanskrit(){
+    this.http.get<Asana[]>(`${ this.apiUrl }`)
+    .pipe(
+      map(sanskrit => sanskrit.map(sk => sk.sk))
+    )
+    .subscribe( resp => {
+      this.asanasSk = resp
+      console.log(this.asanasSk);
     })
   }
 }
