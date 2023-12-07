@@ -1,0 +1,15 @@
+<p>list-asanas works!</p>
+<h6 *ngFor="let value of asanasRutas">
+  {{value}}
+
+</h6>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+
+        <img *ngFor="let value of asanasRutas" src="{{value}}" alt="{{value}}" class="foto">
+      </div>
+    </div>
+  </div>
+</div>

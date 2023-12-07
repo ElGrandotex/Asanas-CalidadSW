@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "en": "Mountain Pose",
+    "sk": "Tadasana",
+    "sp": "Postura de la Montaña",
+    "ruta": "assets\/images\/mountain_pose.jpg"
+  },
+  {
+    "id": 2,
+    "en": "Downward-Facing Dog",
+    "sk": "Adho Mukha Svanasana",
+    "sp": "Perro mirando hacia abajo",
+    "ruta": "assets\/images\/DownwardFacing_Dog.png"
+  },
+  {
+    "id": 3,
+    "en": "Warrior I",
+    "sk": "Virabhadrasana I",
+    "sp": "Guerrero I",
+    "ruta": "assets\/images\/Warrior_1.jpg"
+  },
+  {
+    "id": 4,
+    "en": "Warrior II",
+    "sk": "Virabhadrasana II",
+    "sp": "Guerrero II",
+    "ruta": "assets\/images\/Warrior_II.png"
+  },
+  {
+    "id": 5,
+    "en": "Tree Pose",
+    "sk": "Vrikshasana",
+    "sp": "Postura del Árbol",
+    "ruta": "assets\/images\/Tree_pose.png"
+  },
+  {
+    "id": 6,
+    "en": "Childs Pose ",
+    "sk": "Balasana",
+    "sp": "Postura del Niño",
+    "ruta": "assets\/images\/Childs_pose.png"
+  },
+  {
+    "id": 7,
+    "en": "Half Cobra Pose",
+    "sk": "Ardha Bhujangasana",
+    "sp": "Postura de la Cobra",
+    "ruta": "assets\/images\/Half_cobra.png"
+  },
+  {
+    "id": 8,
+    "en": "Seated Forward Bend",
+    "sk": "Paschimottanasana",
+    "sp": "Flexión hacia adelante",
+    "ruta": "assets\/images\/Seated_Forward_Bend.jpg"
+  },
+  {
+    "id": 9,
+    "en": "Bridge Pose",
+    "sk": "Setu Bandhasana",
+    "sp": "Postura del Puente",
+    "ruta": "assets\/images\/Bridge_pose.png"
+  },
+  {
+    "id": 10,
+    "en": "Corpse Pose",
+    "sk": "Shavasana",
+    "sp": "Postura del Cadáver",
+    "ruta": "assets\/images\/Corpse.png"
+  },
+  {
+    "id": 11,
+    "en": "Triangle Pose",
+    "sk": "Trikonasana",
+    "sp": "Postura del Triángulo",
+    "ruta": "assets\/images\/Triangle.png"
+  },
+  {
+    "id": 12,
+    "en": "Plank Pose",
+    "sk": "Kumbhakasana",
+    "sp": "Postura de la Plancha",
+    "ruta": "assets\/images\/Plank.png"
+  },
+  {
+    "id": 13,
+    "en": "Upward-Facing Dog",
+    "sk": "Urdhva Mukha Svanasana",
+    "sp": "Perro mirando hacia arriba",
+    "ruta": "assets\/images\/UpwardFacing_Dog.png"
+  },
+  {
+    "id": 14,
+    "en": "Fish Pose",
+    "sk": "Matsyasana",
+    "sp": "Postura del Pez",
+    "ruta": "assets\/images\/Fish.png"
+  },
+  {
+    "id": 15,
+    "en": "Chair Pose",
+    "sk": "Utkatasana",
+    "sp": "Postura de la Silla",
+    "ruta": "assets\/images\/Chair.png"
+  },
+  {
+    "id": 16,
+    "en": "Garland Pose",
+    "sk": "Malasana",
+    "sp": "Postura de la Guirnalda",
+    "ruta": "assets\/images\/Garland.jpg"
+  },
+  {
+    "id": 17,
+    "en": "Pigeon Pose",
+    "sk": "Eka Pada Rajakapotasana",
+    "sp": "Postura de la Paloma",
+    "ruta": "assets\/images\/Pigeon.png"
+  },
+  {
+    "id": 18,
+    "en": "Upward Salute",
+    "sk": "Urdhva Hastasana",
+    "sp": "Saludo hacia arriba",
+    "ruta": "assets\/images\/Upward_Salute.png"
+  },
+  {
+    "id": 19,
+    "en": "Revolved Triangle Pose",
+    "sk": "Parivrtta Trikonasana",
+    "sp": "Postura del Triángulo Invertido",
+    "ruta": "assets\/images\/Revolved_Triangle.png"
+  },
+  {
+    "id": 20,
+    "en": "Revolved Head To Knee Pose ",
+    "sk": "Parivrtta Janu Sirsasana",
+    "sp": "Postura de la Cabeza a la Rodilla Invertida",
+    "ruta": "assets\/images\/RevolvedHeadToKnee.jpg"
+  }
+]
