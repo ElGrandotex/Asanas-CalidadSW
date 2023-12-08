@@ -1,24 +1,39 @@
 <div class="row">
-  <table>
-    <tr>
-      <td *ngFor="let ruta of asanasRutas">
-        <img  src="{{ruta}}" alt="{{ruta}}" class="foto">
-      </td>
-    </tr>
-    <tr>
-      <td *ngFor="let ingles of asanasIngles">
-        {{ ingles }}
-      </td>
-    </tr>
-    <tr>
-      <td *ngFor="let espaniol of asanasEspaniol">
-        {{ espaniol }}
-      </td>
-    </tr>
-    <tr>
-      <td *ngFor="let sanscrito of asanasSanscrito">
-        {{ sanscrito }}
-      </td>
-    </tr>
-  </table>
+  <div class="table-responsive">
+
+    <table class="table">
+      <tr>
+        <td class="sticky-column">
+          <img src="assets/extra/foto.png" alt="" class="icono">
+        </td>
+        <td *ngFor="let ruta of asanasRutas">
+          <img src="{{ruta}}" alt="{{ruta}}" class="foto">
+        </td>
+      </tr>
+      <tr>
+        <td class="sticky-column">
+          <img src="assets/extra/english.png" alt="" class="icono">
+        </td>
+        <td *ngFor="let ingles of asanasIngles">
+          {{ ingles }}
+        </td>
+      </tr>
+      <tr>
+        <td class="sticky-column">
+          <img src="assets/extra/spanish.png" alt="" class="icono">
+        </td>
+        <td *ngFor="let espaniol of asanasEspaniol">
+          {{ espaniol }}
+        </td>
+      </tr>
+      <tr>
+        <td class="sticky-column">
+          <img src="assets/extra/sk.png" alt="" class="icono">
+        </td>
+        <td *ngFor="let sanscrito of asanasSanscrito">
+          {{ sanscrito }}
+        </td>
+      </tr>
+    </table>
+  </div>
 </div>

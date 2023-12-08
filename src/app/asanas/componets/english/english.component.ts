@@ -2,21 +2,28 @@ import { Component, OnInit } from '@angular/core';
 import { AsanasService } from '../../services/asanas.service';
 
 @Component({
-  selector: 'com-list-asanas',
-  templateUrl: './list-asanas.component.html',
-  styleUrls: ['./list-asanas.component.css']
+  selector: 'com-english',
+  templateUrl: './english.component.html',
+  styleUrls: ['./english.component.css']
 })
-export class ListAsanasComponent implements OnInit {
+export class EnglishComponent implements OnInit{
+
+  seleccion !: number;
+  controlLista: boolean = false;
 
   constructor( private asanasSrv: AsanasService){}
 
   ngOnInit(){
+    this.asanasSrv.obtenerAsanas();
     this.asanasSrv.obtenerAsanasRuta();
     this.asanasSrv.obtenerAsanasEnglish();
     this.asanasSrv.obtenerAsanasSanskrit();
     this.asanasSrv.obtenerAsanasSpanish();
   }
 
+  get asanasAll(){
+    return this.asanasSrv.asanas;
+  }
   get asanasRutas(){
     return this.asanasSrv.asanasRuta;
   }
@@ -28,5 +35,8 @@ export class ListAsanasComponent implements OnInit {
   }
   get asanasSanscrito(){
     return this.asanasSrv.asanasSk;
+  }
+  mostrar(){
+    this.controlLista = true;
   }
 }

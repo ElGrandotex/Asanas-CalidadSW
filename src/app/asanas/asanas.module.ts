@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ListAsanasComponent } from './componets/list-asanas/list-asanas.component';
 import { SidebarComponent } from './componets/sidebar/sidebar.component';
+import { EnglishComponent } from './componets/english/english.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -10,10 +12,12 @@ import { SidebarComponent } from './componets/sidebar/sidebar.component';
   declarations: [
     HomePageComponent,
     ListAsanasComponent,
-    SidebarComponent
+    SidebarComponent,
+    EnglishComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     HomePageComponent,
