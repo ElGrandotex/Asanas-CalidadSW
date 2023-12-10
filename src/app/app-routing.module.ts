@@ -9,7 +9,7 @@ import { ListAsanasComponent } from './asanas/componets/list-asanas/list-asanas.
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomePageComponent
   },
   {
@@ -34,7 +34,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'home'
+    redirectTo: ''
   }
 ]
 
