@@ -12,5 +12,7 @@
 
 <div class="p-4 text-center animate__animated animate__fadeIn" *ngIf="controlResultado">
   <hr class="p-2">
-  <h5>{{palabra}} : {{traduccion}}</h5>
+  <h5 *ngFor="let morfema of morfemasEncontrados">
+    {{morfema.morfema | uppercase}} : {{morfema.traduccion}}
+  </h5>
 </div>
