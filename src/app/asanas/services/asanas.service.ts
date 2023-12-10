@@ -8,6 +8,7 @@ import { Asana } from '../interface/asana';
 })
 export class AsanasService {
 
+  //Variables
   private apiAsana = 'assets/data/db.json';
   private apiMorfemas = 'assets/data/traduccion.json';
   morfemas!: any;
@@ -18,8 +19,12 @@ export class AsanasService {
   asanasSk!: any;
   asanasRuta!: any;
 
+  //Constructor
   constructor( private http: HttpClient) { }
 
+  /**
+   * Consulta de morfemas de la BD
+   */
   obtenerMorfema(): void{
     this.http.get(`${ this.apiMorfemas }`)
     .subscribe( resp => {
@@ -27,6 +32,9 @@ export class AsanasService {
     })
   }
 
+  /**
+   * Consulta de todas las asanas en BD
+   */
   obtenerAsanas(): void{
     this.http.get(`${ this.apiAsana }`)
     .subscribe( resp => {
@@ -34,6 +42,9 @@ export class AsanasService {
     })
   }
 
+  /**
+   * Consulta de 'ruta' de todas las asanas
+   */
   obtenerAsanasRuta(){
     this.http.get<Asana[]>(`${ this.apiAsana }`)
     .pipe(
@@ -44,6 +55,9 @@ export class AsanasService {
     })
   }
 
+  /**
+   * Consulta de 'en' de todas las asanas
+   */
   obtenerAsanasEnglish(){
     this.http.get<Asana[]>(`${ this.apiAsana }`)
     .pipe(
@@ -54,6 +68,9 @@ export class AsanasService {
     })
   }
 
+    /**
+   * Consulta de 'sp' de todas las asanas
+   */
   obtenerAsanasSpanish(){
     this.http.get<Asana[]>(`${ this.apiAsana }`)
     .pipe(
@@ -63,6 +80,10 @@ export class AsanasService {
       this.asanasSp = resp
     })
   }
+
+    /**
+   * Consulta de 'sk' de todas las asanas
+   */
   obtenerAsanasSanskrit(){
     this.http.get<Asana[]>(`${ this.apiAsana }`)
     .pipe(

@@ -8,8 +8,10 @@ import { AsanasService } from '../../services/asanas.service';
 })
 export class ListAsanasComponent implements OnInit {
 
+  //Constructor
   constructor( private asanasSrv: AsanasService){}
 
+  //Tareas de inicializacion
   ngOnInit(){
     this.asanasSrv.obtenerAsanasRuta();
     this.asanasSrv.obtenerAsanasEnglish();
@@ -17,6 +19,7 @@ export class ListAsanasComponent implements OnInit {
     this.asanasSrv.obtenerAsanasSpanish();
   }
 
+  //Obtener la informacion de asanas
   get asanasRutas(){
     return this.asanasSrv.asanasRuta;
   }

@@ -8,11 +8,14 @@ import { AsanasService } from '../../services/asanas.service';
 })
 export class EnglishComponent implements OnInit{
 
+  //Variables
   seleccion !: number;
   controlLista: boolean = false;
 
+  //Constructor
   constructor( private asanasSrv: AsanasService){}
 
+  //Tareas de inicializacion
   ngOnInit(){
     this.asanasSrv.obtenerAsanas();
     this.asanasSrv.obtenerAsanasRuta();
@@ -21,9 +24,7 @@ export class EnglishComponent implements OnInit{
     this.asanasSrv.obtenerAsanasSpanish();
   }
 
-  get asanasAll(){
-    return this.asanasSrv.asanas;
-  }
+  //Obtener la informacion de asanas
   get asanasRutas(){
     return this.asanasSrv.asanasRuta;
   }
@@ -36,6 +37,8 @@ export class EnglishComponent implements OnInit{
   get asanasSanscrito(){
     return this.asanasSrv.asanasSk;
   }
+
+  //Controlador para mostrar el select
   mostrar(){
     this.controlLista = true;
   }

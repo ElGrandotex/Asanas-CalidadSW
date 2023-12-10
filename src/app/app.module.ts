@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { AsanasModule } from './asanas/asanas.module';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
-import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,6 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     HttpClientModule,
     FormsModule,
     AppRoutingModule,
-    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

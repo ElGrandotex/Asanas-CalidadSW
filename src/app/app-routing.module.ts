@@ -7,6 +7,7 @@ import { SanskritComponent } from './asanas/componets/sanskrit/sanskrit.componen
 import { TraductorComponent } from './asanas/componets/traductor/traductor.component';
 import { ListAsanasComponent } from './asanas/componets/list-asanas/list-asanas.component';
 
+//Rutas de acceso
 const routes: Routes = [
   {
     path: '',

@@ -9,34 +9,30 @@ import { Morfema } from '../../interface/morfema';
 })
 export class TraductorComponent {
 
+  //Variables
   public traduccion: string = '';
   public controlResultado: boolean = false;
   public palabra: string = '';
+  public morfemasEncontrados : any[] =[];
 
+  //Obtiene informacion del input
   @ViewChild('txtTraduccion')
   public palabraTraducir!: ElementRef<HTMLInputElement>;
 
+  //Constructor
   constructor( private asanaSrv: AsanasService){}
+
+  //Tareas de inicializacion
   ngOnInit(){
     this.asanaSrv.obtenerMorfema();
   }
 
-  // traducir(){
-  //   this.traduccion = 'Traducción no encontrada';
-  //   this.palabra = this.palabraTraducir.nativeElement.value.toLowerCase();
-
-  //   for(const dato of this.asanaSrv.morfemas){
-  //     if(this.palabra === dato.morfema){
-  //       this.traduccion =  dato.traduccion
-  //     }
-  //   }
-  //   this.palabra = this.palabra.toUpperCase()
-  //   this.palabraTraducir.nativeElement.value = '';
-  //   this.controlResultado = true;
-  // }
-
-  public morfemasEncontrados : any[] =[];
+  /**
+   * Traduce una palabra de sanscrito a espaniol
+   * Separa en morfemas para hacer la traduccion
+   */
   traducir(){
+    // Variables de inicio
     this.traduccion = 'Traducción no encontrada';
     this.palabra = this.palabraTraducir.nativeElement.value.toLowerCase();
     this.morfemasEncontrados = [{
