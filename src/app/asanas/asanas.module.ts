@@ -5,6 +5,10 @@ import { ListAsanasComponent } from './componets/list-asanas/list-asanas.compone
 import { SidebarComponent } from './componets/sidebar/sidebar.component';
 import { EnglishComponent } from './componets/english/english.component';
 import { FormsModule } from '@angular/forms';
+import { SpanishComponent } from './componets/spanish/spanish.component';
+import { SanskritComponent } from './componets/sanskrit/sanskrit.component';
+import { TraductorComponent } from './componets/traductor/traductor.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -14,10 +18,14 @@ import { FormsModule } from '@angular/forms';
     ListAsanasComponent,
     SidebarComponent,
     EnglishComponent,
+    SpanishComponent,
+    SanskritComponent,
+    TraductorComponent,
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    RouterModule,
   ],
   exports: [
     HomePageComponent,
