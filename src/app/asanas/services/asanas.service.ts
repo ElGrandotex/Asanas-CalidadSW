@@ -1,14 +1,18 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { concatMap, map } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 import { Asana } from '../interface/asana';
+import { Morfema } from '../interface/morfema';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AsanasService {
 
-  private apiUrl = 'assets/data/db.json';
+  private apiAsana = 'assets/data/db.json';
+  private apiMorfemas = 'assets/data/traduccion.json';
+  morfemas!: any;
   asanas!: any;
   asanasID!: any;
   asanasEn!: any;
@@ -18,8 +22,16 @@ export class AsanasService {
 
   constructor( private http: HttpClient) { }
 
+  obtenerMorfema(): void{
+    this.http.get(`${ this.apiMorfemas }`)
+    .subscribe( resp => {
+      this.morfemas = resp;
+      console.log(this.morfemas);
+    })
+  }
+
   obtenerAsanas(): void{
-    this.http.get(`${ this.apiUrl }`)
+    this.http.get(`${ this.apiAsana }`)
     .subscribe( resp => {
       this.asanas = resp;
       console.log(this.asanas);
@@ -27,7 +39,7 @@ export class AsanasService {
   }
 
   obtenerAsanasRuta(){
-    this.http.get<Asana[]>(`${ this.apiUrl }`)
+    this.http.get<Asana[]>(`${ this.apiAsana }`)
     .pipe(
       map(rutas => rutas.map(ruta => ruta.ruta))
     )
@@ -38,7 +50,7 @@ export class AsanasService {
   }
 
   obtenerAsanasEnglish(){
-    this.http.get<Asana[]>(`${ this.apiUrl }`)
+    this.http.get<Asana[]>(`${ this.apiAsana }`)
     .pipe(
       map(asanas => asanas.map(asa => asa.en))
     )
@@ -49,7 +61,7 @@ export class AsanasService {
   }
 
   obtenerAsanasSpanish(){
-    this.http.get<Asana[]>(`${ this.apiUrl }`)
+    this.http.get<Asana[]>(`${ this.apiAsana }`)
     .pipe(
       map(spanish => spanish.map(sp => sp.sp))
     )
@@ -59,7 +71,7 @@ export class AsanasService {
     })
   }
   obtenerAsanasSanskrit(){
-    this.http.get<Asana[]>(`${ this.apiUrl }`)
+    this.http.get<Asana[]>(`${ this.apiAsana }`)
     .pipe(
       map(sanskrit => sanskrit.map(sk => sk.sk))
     )

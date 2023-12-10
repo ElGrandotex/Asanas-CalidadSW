@@ -1,0 +1,16 @@
+<h2 class="p-4 text-center animate__animated animate__fadeIn">Morfemas</h2>
+
+<div class="p-4 conteiner animate__animated animate__fadeIn">
+  <h4 class="p-2">Traductor / Translator</h4>
+  <input type="text"
+  class="p-2 form-control"
+  placeholder="Insert text"
+  (keyup.enter)="traducir()"
+  #txtTraduccion
+  >
+</div>
+
+<div class="p-4 text-center animate__animated animate__fadeIn" *ngIf="controlResultado">
+  <hr class="p-2">
+  <h5>{{palabra}} : {{traduccion}}</h5>
+</div>
