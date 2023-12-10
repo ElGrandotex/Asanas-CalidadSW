@@ -39,7 +39,6 @@ export class TraductorComponent {
   traducir(){
     this.traduccion = 'Traducción no encontrada';
     this.palabra = this.palabraTraducir.nativeElement.value.toLowerCase();
-    console.log(this.morfemasEncontrados);
     this.morfemasEncontrados = [{
       morfema: this.palabra,
       traduccion: this.traduccion
@@ -56,7 +55,6 @@ export class TraductorComponent {
         this.palabra = this.palabra.substring(dato.morfema.length);
       }
     }
-    console.log(this.morfemasEncontrados);
 
     // Si se encontraron morfemas, busca la traducción de la palabra completa
     if (this.morfemasEncontrados.length > 0) {

@@ -24,7 +24,6 @@ export class AsanasService {
     this.http.get(`${ this.apiMorfemas }`)
     .subscribe( resp => {
       this.morfemas = resp;
-      console.log(this.morfemas);
     })
   }
 
@@ -32,7 +31,6 @@ export class AsanasService {
     this.http.get(`${ this.apiAsana }`)
     .subscribe( resp => {
       this.asanas = resp;
-      console.log(this.asanas);
     })
   }
 
@@ -43,7 +41,6 @@ export class AsanasService {
     )
     .subscribe( resp => {
       this.asanasRuta = resp
-      console.log(this.asanasRuta);
     })
   }
 
@@ -54,7 +51,6 @@ export class AsanasService {
     )
     .subscribe( resp => {
       this.asanasEn = resp
-      console.log(this.asanasEn);
     })
   }
 
@@ -65,7 +61,6 @@ export class AsanasService {
     )
     .subscribe( resp => {
       this.asanasSp = resp
-      console.log(this.asanasSp);
     })
   }
   obtenerAsanasSanskrit(){
@@ -75,7 +70,6 @@ export class AsanasService {
     )
     .subscribe( resp => {
       this.asanasSk = resp
-      console.log(this.asanasSk);
     })
   }
 }
