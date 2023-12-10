@@ -2,8 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { Asana } from '../interface/asana';
-import { Morfema } from '../interface/morfema';
-import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
