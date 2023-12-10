@@ -1,0 +1,15 @@
+.imagen{
+  width: 200px;
+}
+
+table, td, tr{
+  text-align: center;
+  font-size: large;
+  padding: 10px;
+  max-width: 500px;
+  border-collapse: collapse;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.selector{
+  max-width: 300px;
+}

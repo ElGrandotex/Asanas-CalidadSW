@@ -1,9 +1,9 @@
 <div class=" text-center pt-4 animate__animated animate__fadeIn">
-  <h4>Choose</h4>
+  <h4>Choose / Seleccionar</h4>
   <div class="d-flex justify-content-center">
     <div class="mx-auto pt-4">
       <select class="form-select selector" [(ngModel)]="seleccion" (change)="mostrar()">
-        <option *ngFor="let asana of asanasIngles; let i = index" [value]="i">
+        <option *ngFor="let asana of asanasSanscrito; let i = index" [value]="i">
           {{asana}}
         </option>
       </select>
@@ -14,16 +14,16 @@
     <div class="d-flex justify-content-center">
       <table class="table">
         <tr>
+          <td>Sanskrit:</td>
+          <td>{{asanasSanscrito[seleccion]}}</td>
+        </tr>
+        <tr>
           <td>English:</td>
           <td>{{asanasIngles[seleccion]}}</td>
         </tr>
         <tr>
           <td>Spanish:</td>
           <td>{{asanasEspaniol[seleccion]}}</td>
-        </tr>
-        <tr>
-          <td>Sanskrit:</td>
-          <td>{{asanasSanscrito[seleccion]}}</td>
         </tr>
       </table>
     </div>
