@@ -1,8 +1,6 @@
-# Asanas
+![yoga](/src/assets/extra/yoga.png/50%-yoga.png) # Asanas
 
 Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
-
-![yoga](/src/assets/extra/yoga.png)
 
 ## Descripción
 
