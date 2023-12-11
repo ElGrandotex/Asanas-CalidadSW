@@ -6,7 +6,7 @@ Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-
 
 Esta aplicación web proporciona una herramienta para traducir morfemas del sánscrito, así como una lista de asanas para buscar en inglés, español y sánscrito.
 
-![yoga](/src/assets/extra/yoga.png/50%-yoga.png)
+![yoga](/src/assets/extra/yoga.png)
 
 ## Características
 
