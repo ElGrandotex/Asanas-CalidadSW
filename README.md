@@ -2,26 +2,13 @@
 
 Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
 
-## Development server
+![yoga](/src/assets/extra/yoga.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Descripción
 
-## Code scaffolding
+Esta aplicación web proporciona una herramienta para traducir morfemas del sánscrito, así como una lista de asanas para buscar en inglés, español y sánscrito.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Características
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* **Traducción de morfemas:** La aplicación utiliza un modelo de aprendizaje automático para traducir morfemas del sánscrito a inglés, español y viceversa.
+* **Lista de asanas:** La aplicación proporciona una lista de asanas con sus nombres en inglés, español y sánscrito. También incluye información sobre los beneficios de cada asana.
