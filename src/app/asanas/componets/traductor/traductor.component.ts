@@ -13,17 +13,17 @@ export class TraductorComponent {
   public traduccion: string = '';
   public controlResultado: boolean = false;
   public palabra: string = '';
-  public morfemasEncontrados : any[] =[];
+  public morfemasEncontrados: any[] = [];
 
   //Obtiene informacion del input
   @ViewChild('txtTraduccion')
   public palabraTraducir!: ElementRef<HTMLInputElement>;
 
   //Constructor
-  constructor( private asanaSrv: AsanasService){}
+  constructor(private asanaSrv: AsanasService) { }
 
   //Tareas de inicializacion
-  ngOnInit(){
+  ngOnInit() {
     this.asanaSrv.obtenerMorfema();
   }
 
@@ -31,42 +31,40 @@ export class TraductorComponent {
    * Traduce una palabra de sanscrito a espaniol
    * Separa en morfemas para hacer la traduccion
    */
-  traducir(){
-    // Variables de inicio
+  traducir() {
     this.traduccion = 'Traducción no encontrada';
-    this.palabra = this.palabraTraducir.nativeElement.value.toLowerCase();
-    this.morfemasEncontrados = [{
-      morfema: this.palabra,
-      traduccion: this.traduccion
-    }]
+    const input = this.palabraTraducir.nativeElement.value.toLowerCase();
+    const morfemas = input.split(' ');
+    this.morfemasEncontrados = [];
 
-    // Recorre la palabra en busca de coincidencias con los morfemas
-    for (const dato of this.asanaSrv.morfemas) {
-      if (this.palabra.startsWith(dato.morfema)) {
-        this.morfemasEncontrados = [];
-        this.morfemasEncontrados.push({
-          morfema: dato.morfema,
-          traduccion: dato.traduccion,
-        });
-        this.palabra = this.palabra.substring(dato.morfema.length);
-      }
-    }
+    for (const morfema of morfemas) {
+      let morfemaRestante = morfema;
 
-    // Si se encontraron morfemas, busca la traducción de la palabra completa
-    if (this.morfemasEncontrados.length > 0) {
-      for (const dato of this.asanaSrv.morfemas) {
-        if (this.palabra === dato.morfema) {
-          this.morfemasEncontrados.push({
-            morfema: dato.morfema,
-            traduccion: dato.traduccion,
-          });
-          break;
+      while (morfemaRestante.length > 0) {
+        let morfemaEncontrado = false;
+
+        for (const dato of this.asanaSrv.morfemas) {
+
+          if (morfemaRestante.startsWith(dato.morfema)) {
+            this.morfemasEncontrados.push({
+              morfema: dato.morfema,
+              traduccion: dato.traduccion,
+            });
+
+            morfemaEncontrado = true;
+            morfemaRestante = morfemaRestante.substring(dato.morfema.length);
+            break;
+          }
+        }
+        if (!morfemaEncontrado) {
+          break; // No se encontró coincidencia, salir del bucle
         }
       }
     }
-
     this.palabraTraducir.nativeElement.value = '';
     this.controlResultado = true;
   }
+
+
 
 }

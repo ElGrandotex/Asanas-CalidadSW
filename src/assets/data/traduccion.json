@@ -1,5 +1,85 @@
 [
   {
+    "morfema": "tadasana",
+    "traduccion": "Postura de la Montaña"
+  },
+  {
+    "morfema": "adho mukha svanasana",
+    "traduccion": "Perro mirando hacia abajo"
+  },
+  {
+    "morfema": "virabhadrasana i",
+    "traduccion": "Guerrero I"
+  },
+  {
+    "morfema": "virabhadrasana ii",
+    "traduccion": "Guerrero II"
+  },
+  {
+    "morfema": "vrikshasana",
+    "traduccion": "Postura del Árbol"
+  },
+  {
+    "morfema": "balasana",
+    "traduccion": "Postura del Niño"
+  },
+  {
+    "morfema": "ardha bhujangasana",
+    "traduccion": "Postura de la Cobra"
+  },
+  {
+    "morfema": "paschimottanasana",
+    "traduccion": "Flexión hacia adelante"
+  },
+  {
+    "morfema": "setu bandhasana",
+    "traduccion": "Postura del Puente"
+  },
+  {
+    "morfema": "shavasana",
+    "traduccion": "Postura del Cadáver"
+  },
+  {
+    "morfema": "trikonasana",
+    "traduccion": "Postura del Triángulo"
+  },
+  {
+    "morfema": "kumbhakasana",
+    "traduccion": "Postura de la Plancha"
+  },
+  {
+    "morfema": "urdhva mukha svanasana",
+    "traduccion": "Perro mirando hacia arriba"
+  },
+  {
+    "morfema": "matsyasana",
+    "traduccion": "Postura del Pez"
+  },
+  {
+    "morfema": "utkatasana",
+    "traduccion": "Postura de la Silla"
+  },
+  {
+    "morfema": "malasana",
+    "traduccion": "Postura de la Guirnalda"
+  },
+  {
+    "morfema": "eka pada rajakapotasana",
+    "traduccion": "Postura de la Paloma"
+  },
+  {
+    "morfema": "urdhva hastasana",
+    "traduccion": "Saludo hacia arriba"
+  },
+  {
+    "morfema": "parivrtta trikonasana",
+    "traduccion": "Postura del Triángulo Invertido"
+  },
+  {
+    "morfema": "parivrtta janu sirsasana",
+    "traduccion": "Postura de la Cabeza a la Rodilla Invertida"
+  },
+  {
     "morfema": "asana",
     "traduccion": "Postura"
   },
