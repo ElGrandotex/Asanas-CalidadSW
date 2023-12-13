@@ -9,8 +9,7 @@ import { SpanishComponent } from './componets/spanish/spanish.component';
 import { SanskritComponent } from './componets/sanskrit/sanskrit.component';
 import { TraductorComponent } from './componets/traductor/traductor.component';
 import { RouterModule } from '@angular/router';
-
-
+import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   declarations: [
@@ -26,6 +25,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     FormsModule,
     RouterModule,
+    NgSelectModule
   ],
   exports: [
     HomePageComponent,

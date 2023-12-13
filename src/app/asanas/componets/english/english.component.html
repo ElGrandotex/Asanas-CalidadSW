@@ -11,6 +11,14 @@
     </div>
   </div>
 
+  <div class="d-flex justify-content-center">
+    <div class="mx-auto pt-4">
+      <ng-select class="selector" [items]="asanasIngles" [(ngModel)]="seleccion" (change)="mostrar()" placeholder="Selecciona una opción">
+      </ng-select>
+    </div>
+  </div>
+
+
   <div *ngIf="controlLista" class="animate__animated animate__fadeIn">
     <img class="imagen pt-4" [src]="asanasRutas[seleccion]">
     <div class="d-flex justify-content-center">
