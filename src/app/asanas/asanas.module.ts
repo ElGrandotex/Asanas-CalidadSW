@@ -24,8 +24,8 @@ import { NgSelectModule } from '@ng-select/ng-select';
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule,
-    NgSelectModule
+    NgSelectModule,
+    RouterModule
   ],
   exports: [
     HomePageComponent,

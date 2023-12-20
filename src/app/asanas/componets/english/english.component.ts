@@ -41,5 +41,8 @@ export class EnglishComponent implements OnInit{
   //Controlador para mostrar el select
   mostrar(){
     this.controlLista = true;
+    if(!this.seleccion){
+      this.controlLista = false;
+    }
   }
 }
