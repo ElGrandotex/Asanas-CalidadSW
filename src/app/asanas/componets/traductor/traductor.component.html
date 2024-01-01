@@ -12,7 +12,12 @@
 
 <div class="p-4 text-center animate__animated animate__fadeIn" *ngIf="controlResultado">
   <hr class="p-2">
-  <h5 *ngFor="let morfema of morfemasEncontrados">
-    {{morfema.morfema | uppercase}} : {{morfema.traduccion}}
-  </h5>
+  <div *ngIf="morfemasEncontrados.length>0 ; else sinResultado">
+    <h5 *ngFor="let morfema of morfemasEncontrados">
+      {{morfema.morfema | uppercase}} : {{morfema.traduccion}}
+    </h5>
+  </div>
+  <ng-template #sinResultado>
+    <h5>No existe traducci&oacute;n</h5>
+  </ng-template>
 </div>
