@@ -3,8 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AsanasModule } from './asanas/asanas.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,8 @@ import { AppRoutingModule } from './app-routing.module';
     AsanasModule,
     HttpClientModule,
     FormsModule,
+    NgSelectModule,
+    ReactiveFormsModule,
     AppRoutingModule,
   ],
   providers: [],

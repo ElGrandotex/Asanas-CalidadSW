@@ -1,23 +1,14 @@
 <div class=" text-center pt-4 animate__animated animate__fadeIn">
   <h4>Choose</h4>
 
-  <!-- <div class="d-flex justify-content-center">
-    <div class="mx-auto pt-4">
-      <select class="form-select selector" [(ngModel)]="seleccion" (change)="mostrar()">
-        <option *ngFor="let asana of asanasIngles; let i = index" [value]="i">
-          {{asana}}
-        </option>
-      </select>
-    </div>
-  </div> -->
-
   <div class="justify-content-center p-4">
     <div class="pt-4">
       <ng-select
         class="ng-select"
         [(ngModel)]="seleccion"
         (change)="mostrar()"
-        placeholder="Selecciona una opción">
+        placeholder="Selecciona una opción"
+        placement="bottom">
         <ng-option *ngFor="let asana of asanasIngles; let i = index" [value]="i">
           {{asana}}
         </ng-option>

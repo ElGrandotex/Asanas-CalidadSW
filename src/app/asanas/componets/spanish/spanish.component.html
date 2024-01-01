@@ -2,13 +2,18 @@
 
   <h4>Seleccionar</h4>
 
-  <div class="d-flex justify-content-center">
-    <div class="mx-auto pt-4">
-      <select class="form-select selector" [(ngModel)]="seleccion" (change)="mostrar()">
-        <option *ngFor="let asana of asanasEspaniol; let i = index" [value]="i">
+  <div class="justify-content-center p-4">
+    <div class="pt-4">
+      <ng-select
+        class="ng-select"
+        [(ngModel)]="seleccion"
+        (change)="mostrar()"
+        placeholder="Selecciona una opción"
+        placement="bottom">
+        <ng-option *ngFor="let asana of asanasEspaniol; let i = index" [value]="i">
           {{asana}}
-        </option>
-      </select>
+        </ng-option>
+      </ng-select>
     </div>
   </div>
 
