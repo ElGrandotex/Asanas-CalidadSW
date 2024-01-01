@@ -64,6 +64,7 @@ export class AsanasService {
       map(asanas => asanas.map(asa => asa.en))
     )
     .subscribe( resp => {
+      resp.sort((a,b) => a.localeCompare(b))
       this.asanasEn = resp
     })
   }
@@ -77,6 +78,7 @@ export class AsanasService {
       map(spanish => spanish.map(sp => sp.sp))
     )
     .subscribe( resp => {
+      resp.sort((a,b) => a.localeCompare(b))
       this.asanasSp = resp
     })
   }
@@ -90,6 +92,7 @@ export class AsanasService {
       map(sanskrit => sanskrit.map(sk => sk.sk))
     )
     .subscribe( resp => {
+      resp.sort((a,b) => a.localeCompare(b))
       this.asanasSk = resp
     })
   }
