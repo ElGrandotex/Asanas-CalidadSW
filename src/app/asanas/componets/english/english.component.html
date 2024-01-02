@@ -7,7 +7,7 @@
         class="ng-select"
         [(ngModel)]="seleccion"
         (change)="mostrar()"
-        placeholder="Selecciona una opción"
+        placeholder="Select an option"
         placement="bottom">
         <ng-option *ngFor="let asana of asanasIngles; let i = index" [value]="i">
           {{asana}}
