@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 import { Asana } from '../interface/asana';
 
@@ -96,5 +96,24 @@ export class AsanasService {
       // resp.sort((a,b) => a.localeCompare(b))
       this.asanasSk = resp
     })
+  }
+
+  private httpOptions = {
+    headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
+
+  /**
+   * Agregar una nueva Asana en la base de datos
+  **/
+  crearAsana(asana: Asana): void {
+    this.http.post(`${this.apiAsana}`, asana, this.httpOptions)
+      .subscribe(
+        (response) => {
+          console.log('Asana created successfully:', response);
+        },
+        (error) => {
+          console.error('Error creating asana:', error);
+        }
+      );
   }
 }
