@@ -1,182 +1,227 @@
 [
   {
     "morfema": "tadasana",
-    "traduccion": "Postura de la Montaña"
+    "traduccionEN": "Mountain Pose",
+    "traduccionSP": "Postura de la Montaña"
   },
   {
     "morfema": "adho mukha svanasana",
-    "traduccion": "Perro mirando hacia abajo"
+    "traduccionEN": "Downward-Facing Dog",
+    "traduccionSP": "Perro mirando hacia abajo"
   },
   {
     "morfema": "virabhadrasana i",
-    "traduccion": "Guerrero I"
+    "traduccionEN": "Warrior I",
+    "traduccionSP": "Guerrero I"
   },
   {
     "morfema": "virabhadrasana ii",
-    "traduccion": "Guerrero II"
+    "traduccionEN": "Warrior II",
+    "traduccionSP": "Guerrero II"
   },
   {
     "morfema": "vrikshasana",
-    "traduccion": "Postura del Árbol"
+    "traduccionEN": "Tree Pose",
+    "traduccionSP": "Postura del Árbol"
   },
   {
     "morfema": "balasana",
-    "traduccion": "Postura del Niño"
+    "traduccionEN": "Childs Pose ",
+    "traduccionSP": "Postura del Niño"
   },
   {
     "morfema": "ardha bhujangasana",
-    "traduccion": "Postura de la Cobra"
+    "traduccionEN": "Half Cobra Pose",
+    "traduccionSP": "Postura de la Cobra"
   },
   {
     "morfema": "paschimottanasana",
-    "traduccion": "Flexión hacia adelante"
+    "traduccionEN": "Seated Forward Bend",
+    "traduccionSP": "Flexión hacia adelante"
   },
   {
     "morfema": "setu bandhasana",
-    "traduccion": "Postura del Puente"
+    "traduccionEN": "Bridge Pose",
+    "traduccionSP": "Postura del Puente"
   },
   {
     "morfema": "shavasana",
-    "traduccion": "Postura del Cadáver"
+    "traduccionEN": "Corpse Pose",
+    "traduccionSP": "Postura del Cadáver"
   },
   {
     "morfema": "trikonasana",
-    "traduccion": "Postura del Triángulo"
+    "traduccionEN": "Triangle Pose",
+    "traduccionSP": "Postura del Triángulo"
   },
   {
     "morfema": "kumbhakasana",
-    "traduccion": "Postura de la Plancha"
+    "traduccionEN": "Plank Pose",
+    "traduccionSP": "Postura de la Plancha"
   },
   {
     "morfema": "urdhva mukha svanasana",
-    "traduccion": "Perro mirando hacia arriba"
+    "traduccionEN": "Upward-Facing Dog",
+    "traduccionSP": "Perro mirando hacia arriba"
   },
   {
     "morfema": "matsyasana",
-    "traduccion": "Postura del Pez"
+    "traduccionEN": "Fish Pose",
+    "traduccionSP": "Postura del Pez"
   },
   {
     "morfema": "utkatasana",
-    "traduccion": "Postura de la Silla"
+    "traduccionEN": "Chair Pose",
+    "traduccionSP": "Postura de la Silla"
   },
   {
     "morfema": "malasana",
-    "traduccion": "Postura de la Guirnalda"
+    "traduccionEN": "Garland Pose",
+    "traduccionSP": "Postura de la Guirnalda"
   },
   {
     "morfema": "eka pada rajakapotasana",
-    "traduccion": "Postura de la Paloma"
+    "traduccionEN": "Pigeon Pose",
+    "traduccionSP": "Postura de la Paloma"
   },
   {
     "morfema": "urdhva hastasana",
-    "traduccion": "Saludo hacia arriba"
+    "traduccionEN": "Upward Salute",
+    "traduccionSP": "Saludo hacia arriba"
   },
   {
     "morfema": "parivrtta trikonasana",
-    "traduccion": "Postura del Triángulo Invertido"
+    "traduccionEN": "Revolved Triangle Pose",
+    "traduccionSP": "Postura del Triángulo Invertido"
   },
   {
     "morfema": "parivrtta janu sirsasana",
-    "traduccion": "Postura de la Cabeza a la Rodilla Invertida"
+    "traduccionEN": "Revolved Head To Knee Pose ",
+    "traduccionSP": "Postura de la Cabeza a la Rodilla Invertida"
   },
   {
     "morfema": "asana",
-    "traduccion": "Postura"
+    "traduccionEN": "Posture",
+    "traduccionSP": "Postura"
   },
   {
     "morfema": "sana",
-    "traduccion": "Postura"
+    "traduccionEN": "Posture",
+    "traduccionSP": "Postura"
   },
   {
     "morfema": "adho",
-    "traduccion": "Abajo"
+    "traduccionEN": "Down",
+    "traduccionSP": "Abajo"
   },
   {
     "morfema": "ardha",
-    "traduccion": "Mitad"
+    "traduccionEN": "Half",
+    "traduccionSP": "Mitad"
   },
   {
     "morfema": "urdhva",
-    "traduccion": "Arriba"
+    "traduccionEN": "Up",
+    "traduccionSP": "Arriba"
   },
   {
     "morfema": "mukha",
-    "traduccion": "Rostro"
+    "traduccionEN": "Face",
+    "traduccionSP": "Rostro"
   },
   {
     "morfema": "svana",
-    "traduccion": "Perro"
+    "traduccionEN": "Dog",
+    "traduccionSP": "Perro"
   },
   {
     "morfema": "virabhadra",
-    "traduccion": "Guerrero"
+    "traduccionEN": "Warrior",
+    "traduccionSP": "Guerrero"
   },
   {
     "morfema": "vriksha",
-    "traduccion": "Árbol"
+    "traduccionEN": "Tree",
+    "traduccionSP": "Árbol"
   },
   {
     "morfema": "bala",
-    "traduccion": "Niño"
+    "traduccionEN": "Child",
+    "traduccionSP": "Niño"
   },
   {
     "morfema": "bhujanga",
-    "traduccion": "Cobra"
+    "traduccionEN": "Cobra",
+    "traduccionSP": "Cobra"
   },
   {
     "morfema": "paschi",
-    "traduccion": "Oeste"
+    "traduccionEN": "West",
+    "traduccionSP": "Oeste"
   },
   {
     "morfema": "setu",
-    "traduccion": "Puente"
+    "traduccionEN": "Bridge",
+    "traduccionSP": "Puente"
   },
   {
     "morfema": "shava",
-    "traduccion": "Cádaver"
+    "traduccionEN": "Corpse",
+    "traduccionSP": "Cádaver"
   },
   {
     "morfema": "trikona",
-    "traduccion": "Triángulo"
+    "traduccionEN": "Triangle",
+    "traduccionSP": "Triángulo"
   },
   {
     "morfema": "matsya",
-    "traduccion": "Pez"
+    "traduccionEN": "Fish",
+    "traduccionSP": "Pez"
   },
   {
     "morfema": "mala",
-    "traduccion": "Guirnalda"
+    "traduccionEN": "Garland",
+    "traduccionSP": "Guirnalda"
   },
   {
     "morfema": "eka",
-    "traduccion": "Uno"
+    "traduccionEN": "One",
+    "traduccionSP": "Uno"
   },
   {
     "morfema": "pada",
-    "traduccion": "Pie"
+    "traduccionEN": "Foot",
+    "traduccionSP": "Pie"
   },
   {
     "morfema": "raja",
-    "traduccion": "Real"
+    "traduccionEN": "Real",
+    "traduccionSP": "Real"
   },
   {
     "morfema": "kapota",
-    "traduccion": "Paloma"
+    "traduccionEN": "Dove",
+    "traduccionSP": "Paloma"
   },
   {
     "morfema": "hasta",
-    "traduccion": "Mano"
+    "traduccionEN": "Hand",
+    "traduccionSP": "Mano"
   },
   {
     "morfema": "parivrtta",
-    "traduccion": "Invertido"
+    "traduccionEN": "Inverted",
+    "traduccionSP": "Invertido"
   },
   {
     "morfema": "janu",
-    "traduccion": "Rodilla"
+    "traduccionEN": "Knee",
+    "traduccionSP": "Rodilla"
   },
   {
     "morfema": "sirsa",
-    "traduccion": "Cabeza"
+    "traduccionEN": "Head",
+    "traduccionSP": "Cabeza"
   }
 ]

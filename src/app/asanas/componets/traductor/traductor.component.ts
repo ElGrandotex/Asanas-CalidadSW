@@ -48,7 +48,8 @@ export class TraductorComponent {
           if (morfemaRestante.startsWith(dato.morfema)) {
             this.morfemasEncontrados.push({
               morfema: dato.morfema,
-              traduccion: dato.traduccion,
+              traduccionEN: dato.traduccionEN,
+              traduccionSP: dato.traduccionSP,
             });
 
             morfemaEncontrado = true;
